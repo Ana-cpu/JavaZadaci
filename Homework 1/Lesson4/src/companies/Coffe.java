@@ -6,8 +6,8 @@ public class Coffe extends ProductFeature {
 
 	private String family;
 
-	public Coffe(String name, double price, String string, String family) {
-		super(name, price, string);
+	public Coffe(String name, double price, String date, String family) {
+		super(name, price, date);
 		this.family = family;
 	}
 	
