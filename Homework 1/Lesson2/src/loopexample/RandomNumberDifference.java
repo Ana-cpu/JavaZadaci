@@ -4,10 +4,19 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RandomNumberDifference {
+	RandomNumberDifference(){
+	      //you need to remove input and calculation logic from constructor,
+	      //to avoid running it when constructing this object for testing.
+	}
 
-	public static void main(String[] args) {
+	 public void run() {
+      getInput();
+  }
+	 
 	
-		Random rand = new Random();
+	
+	private void getInput() {
+        Random rand = new Random();
 		
 		//Get Integer Input From the User
 		Scanner input = new Scanner(System.in);
@@ -34,6 +43,26 @@ public class RandomNumberDifference {
 			System.out.print("More lucky next time");
 		}
 	}
-	//loop will be added
+
+	public static void main(String[] args) {
+
+		  {
+			  String [] returnValue= {
+					  "Good catch, You were so good:",
+					  "Incredible, you enter expected number"
+			  };
+			  for(String currentString : returnValue) {
+				  try {
+				 RandomNumberDifference random = new  RandomNumberDifference();
+				 random.run();
+			      }
+			  catch (Exception ex) {
+				  System.out.println("More lucky next time");
+				  break;
+			  }
+		      }
+		  }
+	
+	}
 
 }
