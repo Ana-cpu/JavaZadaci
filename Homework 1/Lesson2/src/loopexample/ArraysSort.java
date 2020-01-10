@@ -29,7 +29,7 @@ public class ArraysSort {
 		System.out.printf("Modified arr[] : %s", Arrays.toString(arr));
 		
 		//sort and print only first 5 elements
-		Arrays.sort(arr, 0, 4);
+		Arrays.sort(arr, 0, lengthA);
 		System.out.printf("First5 sorted elements: ", Arrays.toString(arr));
 	   //number x existing will be added and this class will be modified
 	}
