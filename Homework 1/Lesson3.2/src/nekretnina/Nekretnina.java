@@ -4,6 +4,7 @@ public abstract class Nekretnina {
 	public String adress;
 	public String zone;
 	public int kvadratura;
+	public double okucnica;
 	public Vlasnik Vlasnik;
 	public class Vlasnik{
 		public String ime;
@@ -43,12 +44,19 @@ public abstract class Nekretnina {
 		return getZone();
 	}
 
-	public nekretnina.Nekretnina.Vlasnik getVlasnik(String adress, String zone, int kvadratura,
-			nekretnina.Nekretnina.Vlasnik Vlasnik) {
+	public nekretnina.Nekretnina.Vlasnik getVlasnik(String adress, String zone, int kvadratura,nekretnina.Nekretnina.Vlasnik Vlasnik) {
 		return getVlasnik();
 	}
 
-	public nekretnina.Nekretnina.Vlasnik getVlasnik(String adress, String zone, String string, String string2) {
+	public String getKuca(String adress, String zone, int kvadratura, nekretnina.Nekretnina.Vlasnik Vlasnik) {
+		return null;
+	}
+
+	public double getOkucnica(String adress, String zone, int kvadratura, nekretnina.Nekretnina.Vlasnik Vlasnik, double okucnica) {
+		return 0;
+	}
+
+	public String getKuca(String adress, String zone, int kvadratura, nekretnina.Nekretnina.Vlasnik Vlasnik, double okucnica) {
 		// TODO Auto-generated method stub
 		return null;
 	}
