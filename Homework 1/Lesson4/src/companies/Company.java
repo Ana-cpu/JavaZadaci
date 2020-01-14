@@ -30,7 +30,7 @@ public class Company {
 		if ((ProductFeature.class.getName() == "MilkProducts")||(ProductFeature.class.getName() == "Juice")) {
 			double ValidPrice = 0;
 			//next line will be modified later
-			ValidPrice = ProductFeature.this.getPrice()/100 * Product.this.getPdvMJ() + ProductFeature.this.getPrice();
+			//ValidPrice = ProductFeature.this.getPrice()/100 * Product.this.getPdvMJ() + ProductFeature.this.getPrice();
 			ValidPrice += ValidPrice;
 			if ((this.getCapital()>ValidPrice)) {
 				System.out.println("God job, please continue");
@@ -51,7 +51,7 @@ public class Company {
 		if ((ProductFeature.class.getName() == "Meat")||(ProductFeature.class.getName() == "Coffe")) {
 			double ValidPrice = 0;
 			//next line will be modified later
-			ValidPrice = ProductFeature.this.getPrice()/100 * Product.this.getPdvMC() + ProductFeature.this.getPrice();
+			//ValidPrice = ProductFeature.this.getPrice()/100 * Product.this.getPdvMC() + ProductFeature.this.getPrice();
 			ValidPrice += ValidPrice;
 			if ((this.getCapital()<ValidPrice)) {
 				System.out.println("It is not good solution, please think about this");
