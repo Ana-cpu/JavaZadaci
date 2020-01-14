@@ -3,11 +3,11 @@ import java.time.LocalDateTime;
 
 public abstract class Employ {
 
-	private String name;
-	private String surname;
-	private String address;
-	private String phone;
-	private LocalDateTime date;
+	public String name;
+	public String surname;
+	public String address;
+	public String phone;
+	public LocalDateTime date;
 
 	public void pubicInformation(String name, String surname, String address, String phone, LocalDateTime date) {
 		this.name = name;

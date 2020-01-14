@@ -14,7 +14,7 @@ public abstract class PrivateHospital {
 		this.numberEmploy = numberEmploy;
 		}
 	
-	/*public void setHospitalName (String hospitalName) {
+	public void setHospitalName (String hospitalName) {
 		this.hospitalName = hospitalName;
 	}
 	public void setDirectorName (String directorName) {
@@ -32,18 +32,18 @@ public abstract class PrivateHospital {
 	}
 	public int getNumberEmploy () {
 		return numberEmploy;
-	}*/
+	}
 	 /// work with toString method example
 	public String toString() {
 		return numberHospital + "" + hospitalName + "" + directorName + "" + numberEmploy;
 	}
 	
 	public static void main(String args[]) {
-		PrivateHospital h1 = new PrivateHospital("4", MedLab","Mika", 15);
-		PrivateHospital h2 = new PrivateHospital("5", Vizim","Zika", 15);
+	//	PrivateHospital h1 = new PrivateHospital("4", "MedLab","Mika", 15);
+	//	PrivateHospital h2 = new PrivateHospital("5", "Vizim","Zika", 15);
 	}
 	
-	System.out.println(h1);
-	System.out.println(h2);
+	//System.out.println(h1);
+	//System.out.println(h2);
 
 	}
