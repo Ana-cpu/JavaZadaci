@@ -1,9 +1,14 @@
+// Exception in thread "main" is analyzed:    Array index out of range is caused by : Incompatible Oracle JDBC driver in use by system.
+//This is not part of task, but can be reproduced on some environment. Solution is described:
+// https://www.ibm.com/support/pages/error-javalangarrayindexoutofboundsexception-array-index-out-range-using-database-conversion-utility
+
 package loopexample;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArraysSort {
+	
 
 	public static void main(String[] args) {
         Scanner length = new Scanner(System.in);
