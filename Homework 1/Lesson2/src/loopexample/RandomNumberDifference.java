@@ -15,18 +15,18 @@ public class RandomNumberDifference {
 	 
 	
 	
-	private void getInput() {
+	public void getInput() {
         Random rand = new Random();
 		
 		//Get Integer Input From the User
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Enter an integer: ");
+		System.out.print("Enter an integer between 1 and 50: ");
 		int number = input.nextInt();
 		System.out.println("You entered " + number);
 		
 		//Generate random integer in range 0 to 50
-		int rand_int1 = rand.nextInt(50);
+		int rand_int1 = rand.nextInt(50)+1;
 		
 		//Print random integer
 		System.out.println("Random Integer: "+rand_int1);
