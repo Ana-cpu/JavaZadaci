@@ -12,6 +12,7 @@ public class Min {
 		
 		GeometricImage kv1 = new Kvadrat();
 		GeometricImage kv2 = new Pravougaonik();
+		GeometricImage kv3 = new Kvadrat(5);
 		
 
 		//Krug
@@ -46,6 +47,11 @@ public class Min {
 		System.out.println("Obim pravougaonika " + kv2.obim());
 		System.out.println("Povrsina pravougaonika " + kv2.povrsina());
 		System.out.println("MethodToString pravougaonika " + kv2.getClass().toString());
+		
+		//Kvadrat sa ne setovanom default stranicom
+		System.out.println("Obim kvadrata je " + kv3.obim());
+		System.out.println("Povrsina kvadrata je " + kv3.povrsina());
+		System.out.println("MethodToString kvadrata" + kv3.getClass().toString());
 		
 	}
 
