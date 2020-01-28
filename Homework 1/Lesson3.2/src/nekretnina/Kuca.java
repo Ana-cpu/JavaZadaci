@@ -4,13 +4,13 @@ import nekretnina.Vlasnik;
 
 public class Kuca extends Nekretnina{
 	String address;
-	String zone;
-	int kvadratura;
+	int zone;
+	double kvadratura;
 	nekretnina.Vlasnik Vlasnik;
 	double okucnica;
 
 	
-	public void Kuca(String address, String zone, int kvadratura, nekretnina.Vlasnik Vlasnik, double okucnica) {
+	public void Kuca(String address, int zone, double kvadratura, nekretnina.Vlasnik Vlasnik, double okucnica) {
 		this.address = address;
 		this.zone = zone;
 		this.kvadratura = kvadratura;
@@ -19,7 +19,23 @@ public class Kuca extends Nekretnina{
 		
 	}
 	
+	public double izracunajCenu(double kvadratura, int zone, double okucnica) {
+		double cena = 0.0;
+		if (zone == 1) {
+			cena = (kvadratura + okucnica) * 3000 * 0.15;
+		} else if (zone == 2) {
+			cena = (kvadratura + okucnica) * 2000 * 0.15;
+		} else if (zone == 3) {
+			cena = (kvadratura + okucnica) * 1000 * 0.15;
+		} else {
+			cena = (kvadratura + okucnica) * 500 * 0.15;
+		}
+		return cena;
+
+	}
+	
 	public String toString() {
-		return " Adresa: " + address + "\n Zona: " + zone + "\n Kvadratura: " + kvadratura + "\n Vlasnik: " + Vlasnik + "\n okucnica: " + okucnica;
+		return "Adresa je: " + address + ", u zoni: " + zone + ", kvadrature: " + kvadratura + ", povrsina okucnice je: " + okucnica + ", cena je: " + izracunajCenu(kvadratura, zone, okucnica) + ", " + Vlasnik.toString();
+
 	}
 }
