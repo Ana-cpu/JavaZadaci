@@ -38,7 +38,7 @@ public class Student {
 			    temp_student = student[i+1];
 		}
 
-		System.out.println("Student with max points:  " + temp_student + "" + temp );
+		System.out.println("Student with max points:  " + temp_student + " " + temp );
 		
 		input.close();
 	}
