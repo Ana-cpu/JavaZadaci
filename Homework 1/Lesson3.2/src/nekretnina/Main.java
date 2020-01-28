@@ -1,11 +1,13 @@
 package nekretnina;
+import nekretnina.Vlasnik;
 
 public class Main {
+	
 
 	public static void main(String[] args) {
-		Nekretnina ne1 = new Stan();
+		Vlasnik Vlasnik = null;
+		Nekretnina ne1 = new Stan( "string", "string2", 1,Vlasnik);
 		Nekretnina ne2 = new Kuca();
-		
 
 		//Stan
 		System.out.println("Stan " + ne1.adress);
