@@ -17,15 +17,19 @@ public class Whileloop {
 		System.out.println("You entered " + b);
 		int i = b;
 		
-		
-		while(i<=b) {
-			if (i%2==0) {
-			    System.out.println(i + ",");
-			    i++;
-		    }
-		    System.out.println(i + ",");
+		if(a<=b) {
+			while(a<=b) {
+				if(a%2 == 0)
+					System.out.print(a + " ");
+				a++;
+			}
+		}else {
+			while (b<=a) {
+				if (b%2 == 0) 
+					System.out.print(b + " ");
+				b++;
+			}
 		}
-		
 
 	}
 }
