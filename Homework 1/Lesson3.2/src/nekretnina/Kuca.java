@@ -1,16 +1,19 @@
 package nekretnina;
 
-import nekretnina.Vlasnik;
 
 public class Kuca extends Nekretnina{
-	String address;
-	int zone;
-	double kvadratura;
-	nekretnina.Vlasnik Vlasnik;
+
+	Nekretnina Nekretnina;
 	double okucnica;
 
+	public Kuca() {
+		super();
+		okucnica = 250;
+	}
+
+
 	
-	public void Kuca(String address, int zone, double kvadratura, nekretnina.Vlasnik Vlasnik, double okucnica) {
+	public void Kuca(String address, int zone, int kvadratura, Vlasnik Vlasnik, double okucnica) {
 		this.address = address;
 		this.zone = zone;
 		this.kvadratura = kvadratura;

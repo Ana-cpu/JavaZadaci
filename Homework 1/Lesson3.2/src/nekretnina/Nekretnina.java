@@ -1,26 +1,25 @@
 package nekretnina;
-import nekretnina.Vlasnik;
 
-public abstract class Nekretnina {
-	String adress;
-	String zone;
+public class Nekretnina extends Vlasnik{
+
+	String address;
+	int zone;
 	int kvadratura;
-	double okucnica;
-	nekretnina.Vlasnik Vlasnik;
+	Vlasnik Vlasnik;
+	
+	public Nekretnina() {
+		super();
+		address = "Bulevar Patrijarha Pavla";
+		zone = 2;
+		kvadratura = 63;
+	}
+	
+	public Nekretnina(Vlasnik Vlasnik, String address, int zone, int kvadratura) {
+		this.Vlasnik = Vlasnik;
+		address = "Bulevar Patrijarha Pavla";
+		zone = 2;
+		kvadratura = 63;
+	}
 
-    public String getAdress() {
-        return adress;
-    }
-    
-    public String getZone() {
-    	return zone;
-    }
-    
-    public int getKvadratura() {
-    	return kvadratura;
-    }
-    
-    public Vlasnik getVlasnik(){
-		return Vlasnik;
-    }
+	
 }
