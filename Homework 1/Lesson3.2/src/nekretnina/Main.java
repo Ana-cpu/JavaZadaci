@@ -8,15 +8,17 @@ public class Main {
 		
 
 		//Stan
-		System.out.println("Stan " + ne1.address);
-		System.out.println("Stan " + ne1.kvadratura);
-		System.out.println("Stan" + ne1.zone);
+		System.out.println("Stan se nalazi na adresi: " + ne1.address);
+		System.out.println("Kvadratura stana je: " + ne1.kvadratura);
+		System.out.println("Stan se nalazi u zoni: " + ne1.zone);
+		
 		
 
 		//Kuca
-		System.out.println("Kuca " + ne1.address);
-		System.out.println("Kuca " + ne1.kvadratura);
-		System.out.println("Kuca" + ne1.zone);
+		
+		System.out.println("Kuca se nalazi na adresi: " + ne2.address);
+		System.out.println("Kvadratura kuce je:  " + ne2.kvadratura);
+		System.out.println("Zona ukojoj se kuca nalazi je: " + ne2.zone);
 	}
 
 }
