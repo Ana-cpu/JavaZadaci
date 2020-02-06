@@ -9,14 +9,17 @@ public class RandomNumberDifference {
 	      //to avoid running it when constructing this object for testing.
 	}
 
-	 public void run() {
-      getInput();
+	 public int[] run() {
+      return getInput();
   }
 	 
 	
 	
-	public void getInput() {
+	public static int[] getInput() {
         Random rand = new Random();
+        int number0 = 0;
+        int number1 = 1;
+        int number2 = 2;
 		
 		//Get Integer Input From the User
 		Scanner input = new Scanner(System.in);
@@ -34,35 +37,30 @@ public class RandomNumberDifference {
 		//Incredible, you enter expected number
 		if(number == rand_int1) {
 			System.out.println("Incredible, you enter expected number");
+			return new int[] {number0};
 		}
 		int c= (Math.abs(number-rand_int1));
 		if(c <=5) {
-			System.out.print("Good catch, You were so good:" + Math.abs(number-rand_int1));
+			System.out.println("Good catch, You were so good:" + Math.abs(number-rand_int1));
+			return new int[] {number1};
 		}
 		else{
-			System.out.print("More lucky next time");
+			System.out.println("More lucky next time");
+			return new int[] {number2};
 		}
 	}
 
 	public static void main(String[] args) {
-
 		  {
-			  String [] returnValue= {
-					  "Good catch, You were so good:",
-					  "Incredible, you enter expected number"
-			  };
-			  for(String currentString : returnValue) {
-				  try {
-				 RandomNumberDifference random = new  RandomNumberDifference();
-				 random.run();
-			      }
-			  catch (Exception ex) {
-				  System.out.println("More lucky next time");
-				  break;
-			  }
-		      }
-		  }
-	
-	}
+			  int[] returnValue= getInput();
+			  for(int currentString : returnValue) {
+				  RandomNumberDifference random = new  RandomNumberDifference();
+			      random.run();
 
+		    	 if((random.run()!=returnValue)||(returnValue == null)) {
+		    		  throw new IllegalArgumentException("You must enter number from the range");
+		    	  }
+		      }
+		  }	
+	}
 }
