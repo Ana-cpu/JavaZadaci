@@ -8,6 +8,10 @@ import companies.ProductFeature;
 public class Company {
 
 	private double capital;
+	
+	public Company(){
+		capital = 4312.45678903;
+	}
 	public Company(double capital, double pdv) {
 		this.capital = capital;
 	} 

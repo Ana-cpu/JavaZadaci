@@ -1,12 +1,20 @@
 package companies;
 
-public abstract class Product {
+public class Product {
 
 	private String productMC;
 	private String productMJ;
 
 	private double pdvMC;
 	private double pdvMJ;
+	
+	public Product() {
+		productMC = "kafa";
+		productMJ = "sok";
+		
+		pdvMC = 20;
+		pdvMC = 8;
+	}
 
 	public Product(String productMC, String productMJ, double pdvMC, double pdvMJ) {
 		this.productMC = productMC;

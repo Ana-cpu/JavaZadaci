@@ -2,16 +2,22 @@ package companies;
 
 import java.time.LocalDateTime;
 
-public abstract class ProductFeature {
+public class ProductFeature {
 
 	private String name;
 	private double price;
 	private String date;
+	
+	public ProductFeature() {
+		name = "mlecni proizvod";
+		price = 23.5;
+		date = "7.2.2020.";
+	}
 
-	public ProductFeature(String name, double price, String string) {
+	public ProductFeature(String name, double price, String date) {
 		this.name = name;
 		this.price = price;
-		this.date = string;
+		this.date = date;
 	}
 	
 	/////set appropriate values

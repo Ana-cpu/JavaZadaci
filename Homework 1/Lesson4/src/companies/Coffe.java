@@ -5,6 +5,10 @@ import java.time.LocalDateTime;
 public class Coffe extends ProductFeature {
 
 	private String family;
+	
+	public Coffe() {
+		family = "ANA";
+	}
 
 	public Coffe(String name, double price, String date, String family) {
 		super(name, price, date);
