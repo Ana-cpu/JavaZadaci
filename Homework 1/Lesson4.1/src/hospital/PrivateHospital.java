@@ -1,13 +1,20 @@
 package hospital;
 
-public abstract class PrivateHospital {
+public class PrivateHospital {
 
 	int numberHospital;
 	String hospitalName;
 	String directorName;
 	int numberEmploy;
+	
+	public PrivateHospital() {
+		numberHospital =3;
+		hospitalName = "Endava";
+		directorName = "Genije";
+		numberEmploy = 1023456789;
+	}
 
-	public void PrivateHospital(int numberhospital, String hospitalName, String directorName, int numberEmploy){
+	public void PrivateHospital(int numberHospital, String hospitalName, String directorName, int numberEmploy){
 		this.numberHospital = numberHospital;
 		this.hospitalName = hospitalName;
 		this.directorName = directorName;
@@ -37,13 +44,4 @@ public abstract class PrivateHospital {
 	public String toString() {
 		return numberHospital + "" + hospitalName + "" + directorName + "" + numberEmploy;
 	}
-	
-	public static void main(String args[]) {
-	//	PrivateHospital h1 = new PrivateHospital("4", "MedLab","Mika", 15);
-	//	PrivateHospital h2 = new PrivateHospital("5", "Vizim","Zika", 15);
-	}
-	
-	//System.out.println(h1);
-	//System.out.println(h2);
-
-	}
+}

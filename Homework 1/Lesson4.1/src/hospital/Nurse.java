@@ -5,6 +5,14 @@ import java.time.LocalDateTime;
 public class Nurse extends Employ{
 
 	private String shift;
+	
+	public Nurse() {
+		name = "Ana";
+		surname = "Acanski";
+		address = "Bulevar Patrijarha Pavla 8";
+		phone = "545546465000";
+		date = LocalDateTime.of(2017, 2, 13, 15, 56);
+	}
 
 	public void nurseinformation(String name, String surname, String address, String phone, LocalDateTime date, String shift) {
 		this.name = name;

@@ -8,6 +8,14 @@ public abstract class Employ {
 	public String address;
 	public String phone;
 	public LocalDateTime date;
+	
+	public Employ() {
+		name = "Ana";
+		surname = "Acanski";
+		address = "Bulevar Patrijarha Pavla 8";
+		phone = "545546465000";
+		date = LocalDateTime.of(2017, 2, 13, 15, 56);	
+	}
 
 	public void pubicInformation(String name, String surname, String address, String phone, LocalDateTime date) {
 		this.name = name;

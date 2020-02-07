@@ -4,6 +4,15 @@ import java.time.LocalDateTime;
 
 public class Doctor extends Employ {
 	public String school;
+	
+	public Doctor() {
+		name = "Ana";
+		surname = "Acanski";
+		address = "Bulevar Patrijarha Pavla 8";
+		phone = "545546465000";
+		date = LocalDateTime.of(2017, 2, 13, 15, 56);
+		school = "FTN Novi Sad";
+	}
 
 	public void doctorInformation(String name, String surname, String address, String phone, LocalDateTime date, String school){
 		this.name = name;
