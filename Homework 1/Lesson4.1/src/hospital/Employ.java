@@ -1,7 +1,7 @@
 package hospital;
 import java.time.LocalDateTime;
 
-public abstract class Employ {
+public class Employ {
 
 	public String name;
 	public String surname;
