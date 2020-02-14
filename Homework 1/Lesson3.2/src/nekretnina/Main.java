@@ -23,7 +23,7 @@ public class Main {
 		System.out.println("Kvadratura kuce je:  " + ne2.kvadratura);
 		System.out.println("Zona u kojoj se kuca nalazi je: " + ne2.zone);
 		
-		//The apartment with a parameters
+		//The apartment with a parameters-- this part could e modified, at this moment I am ignoring Vlasnik, this part will be modified in a Vlasnik class later
 		System.out.println(ne3);
 		
 	}
