@@ -57,10 +57,10 @@ public class RandomNumberDifference {
 		
 		System.out.println("Hello, this is a bingo program:) Press Enter and continue game:) ");
 		String c = input.nextLine();
-		test();
 		do{
 			test();
 			for(String current : message) {
+				System.out.println(current);
 				System.out.println("Do you want to continue y or n: ");
 				String c1 = input.nextLine();
 				System.out.println(current);
@@ -68,8 +68,8 @@ public class RandomNumberDifference {
 			
 			for(String current1 : unexpected) {
 				System.out.println("You can run game again:)");
-				String c2 = input.nextLine();
 				System.out.println(unexpected);
+				String c2 = input.nextLine();
 				break;
 			}
 			
