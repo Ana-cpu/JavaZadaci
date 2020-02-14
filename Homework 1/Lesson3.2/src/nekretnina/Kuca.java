@@ -38,7 +38,7 @@ public class Kuca extends Nekretnina{
 	}
 	
 	public String toString() {
-		return "Adresa je: " + address + ", u zoni: " + zone + ", kvadrature: " + kvadratura + ", povrsina okucnice je: " + okucnica + ", cena je: " + izracunajCenu(kvadratura, zone, okucnica) + ", " + Vlasnik.toString();
+		return "Adresa je: " + address + ", u zoni: " + zone + ", kvadrature: " + kvadratura + ", povrsina okucnice je: " + okucnica + ", cena je: " + izracunajCenu(kvadratura, zone, okucnica) + ", " + " Ime: " + ime + "\n Prezime: " + prezime + "\n Maticni broj: " + jmbg + "\n Broj licne karte: " + licnaKarta + "\nAddress: " + address + "\nZone: " + zone  + "\nkvadratura: " + kvadratura;
 
 	}
 }

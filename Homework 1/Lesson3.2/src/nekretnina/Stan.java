@@ -29,7 +29,7 @@ public class Stan extends Nekretnina{
 	}
 	
 	public String toString() {
-		return "Adresa je: " + address + ", u zoni: " + zone + ", kvadrature: " + kvadratura + ", cena je: " + izracunajCenu(kvadratura, zone) + ", " + Vlasnik.toString();
+		return "Adresa je: " + address + ", u zoni: " + zone + ", kvadrature: " + kvadratura + ", cena je: " + izracunajCenu(kvadratura, zone) + ", " + " Ime: " + ime + "\n Prezime: " + prezime + "\n Maticni broj: " + jmbg + "\n Broj licne karte: " + licnaKarta + "\nAddress: " + address + "\nZone: " + zone  + "\nkvadratura: " + kvadratura;
 
 	}
 }

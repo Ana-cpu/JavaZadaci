@@ -1,6 +1,6 @@
 package nekretnina;
 
-public abstract class Vlasnik {
+public class Vlasnik {
 	
 	String ime;
 	String prezime;

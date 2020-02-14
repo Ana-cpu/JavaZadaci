@@ -21,5 +21,9 @@ public class Nekretnina extends Vlasnik{
 		kvadratura = 63;
 	}
 
+	public String toString() {
+		return " Ime: " + ime + "\n Prezime: " + prezime + "\n Maticni broj: " + jmbg + "\n Broj licne karte: " + licnaKarta + "\nAddress: " + address + "\nZone: " + zone  + "\nkvadratura: " + kvadratura ;
+	}
+
 	
 }
