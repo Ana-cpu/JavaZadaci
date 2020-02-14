@@ -42,7 +42,7 @@ public class RandomNumberDifference {
 		}
 	}
 	public static void main(String[] args) {
-		Random rand = new Random();
+		 Random rand = new Random();
 		
 		//Get Integer Input From the User
 		Scanner input = new Scanner(System.in);
@@ -54,22 +54,30 @@ public class RandomNumberDifference {
 		message[1]="Good catch, You were so good, difference is less then 5";
 		
 		unexpected[0]="More lucky next time";
-
-		while(true) {
-			
+		
+		System.out.println("Hello, this is a bingo program:) Press Enter and continue game:) ");
+		String c = input.nextLine();
+		do{
+			test();
 			for(String current : message) {
+				System.out.println(current);
 				System.out.println("Do you want to continue y or n: ");
-				String c = input.nextLine();
-				test();
-				System.out.println();
-
-				if(c.equalsIgnoreCase("n")){ 
-				    break;
-				}
+				String c1 = input.nextLine();
+				System.out.println(current);
 			}
+			
 			for(String current1 : unexpected) {
-				System.out.println(current1);
+				System.out.println("You can run game again:)");
+				String c2 = input.nextLine();
+				break;
 			}
-		}
+			
+			}while(c.equalsIgnoreCase("n"));
+
+
+		
 	}
 }
+		
+			
+	
