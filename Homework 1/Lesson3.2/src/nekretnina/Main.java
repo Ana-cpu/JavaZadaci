@@ -2,10 +2,15 @@ package nekretnina;
 
 public class Main {
 
+	private static final Vlasnik Vlasnik = null;
+
 	public static void main(String[] args) {
 		Nekretnina ne1 = new Stan();
 		Nekretnina ne2 = new Kuca();
 		
+		//it is not important - Vlasnik is set to null for this round:)
+		Nekretnina ne3 = new Stan(Vlasnik, "Bulevar Patrijarha Pavla", 63, 2);
+
 		//Stan
 		System.out.println("Stan se nalazi na adresi: " + ne1.address);
 		System.out.println("Kvadratura stana je: " + ne1.kvadratura);
@@ -19,10 +24,8 @@ public class Main {
 		System.out.println("Zona u kojoj se kuca nalazi je: " + ne2.zone);
 		
 		//The apartment with a parameters
-		System.out.printf("Bulevar Patrijarha Pavla", 63, 2);
+		System.out.println(ne3);
 		
-		//House with a parameters
-		System.out.printf("Bulevar Patrijarha Pavla", 63, 2);
 	}
 
 }
