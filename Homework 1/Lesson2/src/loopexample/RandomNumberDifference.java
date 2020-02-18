@@ -50,12 +50,12 @@ public class RandomNumberDifference {
 		test();
 		String c = input.nextLine();
 		do{
-			test();
 			for(String current : message) {
 				//System.out.println(current);
 				c = input.nextLine();
 				System.out.println("Do you want to continue y or n: ");
 			}
+			test();
 			}while(c.equalsIgnoreCase("Y"));
 		System.out.println("You finished your game. If you want to continue, please run application again.");
 		
