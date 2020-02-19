@@ -1,11 +1,39 @@
 package student;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class OceneStudent {
 
-	private String firstName;
+	private static String firstName;
 	private String lastname;
-	private int Mark;
+	private static int Mark;
 	private double pointsNumber;
+   
+    //enterStudents
+	public static void enterStudents() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter Number of Students:\t");
+		int numStudents = Integer.parseInt(scanner.nextLine());
+		
+		Student[] s = new Student[numStudents];
+		
+		for(int i =0; i<numStudents; i++) {
+			
+			s[i] = new Student(firstName, i);
+			s[i].getdata();
+			s[i].finalmark();
+			s[i].finalgrade();
+			
+		}
+	       System.out.printf("Name\tDefinitive\tLetter\tTest 1\tTest 2\tAssignments\tFinalExam \n");
+	    for(int j = 0; j < numStudents; j++ ){
+	        s[j].print();
+	    }    
+	       
+	}
+	
 	
 	//getMark based on numberPoints
 	
@@ -23,7 +51,7 @@ public class OceneStudent {
     }
 	
 	//construct a new student
-	public OceneStudent(String firstName, String lastname, double pointsNumber) {
+	public OceneStudent(String firstName, String lastname, double pointsNumber, int Mark) {
 		this.firstName = firstName;
 		this.lastname = lastname;
 		this.pointsNumber = pointsNumber;
@@ -36,21 +64,33 @@ public class OceneStudent {
 	}
 	
 	public String toString() {
-		return pointsNumber + " " + firstName + "" + lastname + "";
+		return pointsNumber + " " + firstName + "" + lastname + "" + Mark + "";
+	}
+	
+
+	
+	public void printStudentDetails() {
+		System.out.print("First name: " + firstName);
+		System.out.print("Last name" + lastname);
+		System.out.println(", Points: " + pointsNumber);
+		System.out.println(", Mark: " + Mark);
+
 	}
 	
 	public static void main (String[] args) {
-		
+		enterStudents();
 		//this will be modified later
-		int n = Integer.parseInt(args[0]);
+		int n = 0;
 		// initialize an array
 		OceneStudent[] oceneStudents = new OceneStudent[n];
+
+		n++;
 		
-		for (int i =0; i<n; i++) {
+		for (int i=0; i<n; i++) {
 			String firstName = StdIn.readString();
 			String lastname = StdIn.readString();
 			Double pointsNumber = StdIn.readDouble();
-			oceneStudents[i] = new OceneStudent(firstName, lastname, pointsNumber);
+			oceneStudents[i] = new OceneStudent(firstName, lastname, pointsNumber, Mark);
 		};
 		
 		//insertion sort students
@@ -62,6 +102,7 @@ public class OceneStudent {
 					oceneStudents[j] = oceneStudents[j-1];
 					oceneStudents[j-1] = swap;
 				}
+			oceneStudents[i].printStudentDetails();
 			}
 		}
 		
