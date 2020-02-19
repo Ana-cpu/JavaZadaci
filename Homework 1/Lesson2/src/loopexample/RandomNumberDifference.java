@@ -12,7 +12,6 @@ public class RandomNumberDifference {
 		String[] unexpected = new String[1];
 		System.out.print("Enter an integer: ");
 		int number = input.nextInt();
-		String c = "";
 		
 		if(number>50) {
 			System.out.println("Out of the rang, try again");
@@ -47,10 +46,6 @@ public class RandomNumberDifference {
 		}
 	}
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-
-		String[] message = new String[2];
-		String[] unexpected = new String[1];
 		System.out.println("Hello, this is a bingo program:) Press Enter and continue game:) ");
 		test();
 		
