@@ -1,11 +1,18 @@
 package student;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Student {
-	String name, finalgrade;
+	static String name;
+	String finalgrade;
     private Double finalmark;
-    int marks, marks1, assignments1, finalexam;
+    static int marks;
+	static int marks1;
+	static int assignments1;
+	static int finalexam;
      
     public Student(String name, int marks) 
     {
@@ -14,7 +21,7 @@ public class Student {
         this.marks = marks;
     }
 
-	public void getdata() {
+	public static void getdata() {
 		//print message to enter numbers
 		
 		Scanner input = new Scanner(System.in);
@@ -99,5 +106,24 @@ public class Student {
          System.out.printf("%s\t%.2f\t%s\t%d\t%d\t%d\t\t%d\n", name, finalmark,              
          finalgrade, marks, marks, assignments1, finalexam);
 	 }
+	 
+	 public static void main(String arr[]) throws FileNotFoundException 
+	    { 
+		    OceneStudent.enterStudents();
+	        // Creating a File object that represents the disk file. 
+	        PrintStream o = new PrintStream(new File("ocene.txt")); 
+	  
+	        // Store current System.out before assigning a new value 
+	        PrintStream console = System.out; 
+	  
+	        // Assign o to output stream 
+	         
+	        System.setOut(o);
+	        getdata();
+	  
+	        // Use stored value for output stream 
+	        System.setOut(console); 
+	        System.out.println("This will be written on the console!"); 
+	    } 
 
 }

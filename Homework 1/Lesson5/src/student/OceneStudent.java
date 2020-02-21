@@ -1,5 +1,8 @@
 package student;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -7,7 +10,7 @@ public class OceneStudent {
 
 	private static String firstName;
 	private String lastname;
-	private static int Mark;
+	private static  int Mark;
 	private double pointsNumber;
    
     //enterStudents
@@ -27,13 +30,12 @@ public class OceneStudent {
 			s[i].finalgrade();
 			
 		}
-	       System.out.printf("Name\tDefinitive\tLetter\tTest 1\tTest 2\tAssignments\tFinalExam \n");
+	       System.out.printf("Name\tPoints\tFinal\tLetter\tTest 1\tTest 2\tAssignments \n");
 	    for(int j = 0; j < numStudents; j++ ){
 	        s[j].print();
 	    }    
 	       
 	}
-	
 	
 	//getMark based on numberPoints
 	
@@ -77,8 +79,8 @@ public class OceneStudent {
 
 	}
 	
-	public static void main (String[] args) {
-		enterStudents();
+	public static void marks() throws FileNotFoundException{
+  
 		//this will be modified later
 		int n = 0;
 		// initialize an array
@@ -108,8 +110,13 @@ public class OceneStudent {
 		
 		//print results
 		for(int i = 0; i < n; i++) {
-			StdOut.println(oceneStudents[i]);
+	        StdOut.println(oceneStudents[i]);
 		}
 		
+	}
+	
+	public static void main(String arr[]) throws FileNotFoundException{
+		enterStudents();
+		marks();
 	}
 }
